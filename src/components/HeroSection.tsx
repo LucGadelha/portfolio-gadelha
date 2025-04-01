@@ -6,7 +6,7 @@ const HeroSection = () => {
   const [text, setText] = useState('');
   const [isDeleting, setIsDeleting] = useState(false);
   const [loopNum, setLoopNum] = useState(0);
-  const [typingSpeed, setTypingSpeed] = useState(150);
+  const [typingSpeed, setTypingSpeed] = useState(100); // Aumentei a velocidade alterando de 150 para 100
 
   const roles = ['Lucas Gadelha', 'Engenheiro de Software', 'Desenvolvedor', 'Programador'];
   
@@ -24,13 +24,13 @@ const HeroSection = () => {
       if (!isDeleting && text === fullText) {
         // Pausa antes de começar a apagar
         setTimeout(() => setIsDeleting(true), 1500);
-        setTypingSpeed(100);
+        setTypingSpeed(80); // Aumentei a velocidade de deleção (de 100 para 80)
       } else if (isDeleting && text === '') {
         setIsDeleting(false);
         setLoopNum(loopNum + 1);
-        setTypingSpeed(150);
+        setTypingSpeed(100); // Aumentei a velocidade inicial (de 150 para 100)
       } else {
-        setTypingSpeed(isDeleting ? 100 : 150);
+        setTypingSpeed(isDeleting ? 80 : 100); // Aumentei ambas velocidades
       }
     };
 
@@ -43,8 +43,10 @@ const HeroSection = () => {
       <div className="container mx-auto px-4 md:px-6 py-12 md:py-24">
         <div className="text-center max-w-3xl mx-auto">
           <h1 className="text-4xl md:text-6xl font-bold text-gray-900 mb-4 animate-fade-in">
-            Olá, eu sou <span className="text-blue-600 inline-block min-w-[200px] md:min-w-[300px]">{text}</span>
-            <span className="animate-pulse">|</span>
+            Olá, eu sou <span className="text-blue-600 inline-block min-w-[200px] md:min-w-[300px]">
+              {text}
+              <span className="animate-pulse inline-block">|</span>
+            </span>
           </h1>
           <p className="text-xl md:text-2xl text-gray-600 mb-8 animate-fade-in-up" style={{ animationDelay: '0.2s' }}>
             Desenvolvedor Web & Designer de Interfaces
