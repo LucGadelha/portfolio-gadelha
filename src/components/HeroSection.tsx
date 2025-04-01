@@ -1,14 +1,50 @@
 
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import { ArrowDown, Github, Linkedin, Mail } from 'lucide-react';
 
 const HeroSection = () => {
+  const [text, setText] = useState('');
+  const [isDeleting, setIsDeleting] = useState(false);
+  const [loopNum, setLoopNum] = useState(0);
+  const [typingSpeed, setTypingSpeed] = useState(150);
+
+  const roles = ['Lucas Gadelha', 'Engenheiro de Software', 'Desenvolvedor', 'Programador'];
+  
+  useEffect(() => {
+    const handleTyping = () => {
+      const i = loopNum % roles.length;
+      const fullText = roles[i];
+
+      setText(isDeleting 
+        ? fullText.substring(0, text.length - 1) 
+        : fullText.substring(0, text.length + 1)
+      );
+
+      // Ajustando a velocidade de digitação
+      if (!isDeleting && text === fullText) {
+        // Pausa antes de começar a apagar
+        setTimeout(() => setIsDeleting(true), 1500);
+        setTypingSpeed(100);
+      } else if (isDeleting && text === '') {
+        setIsDeleting(false);
+        setLoopNum(loopNum + 1);
+        setTypingSpeed(150);
+      } else {
+        setTypingSpeed(isDeleting ? 100 : 150);
+      }
+    };
+
+    const timer = setTimeout(handleTyping, typingSpeed);
+    return () => clearTimeout(timer);
+  }, [text, isDeleting, loopNum, typingSpeed, roles]);
+
   return (
     <section className="min-h-screen flex items-center justify-center relative bg-gradient-to-br from-blue-50 to-white pt-16">
       <div className="container mx-auto px-4 md:px-6 py-12 md:py-24">
         <div className="text-center max-w-3xl mx-auto">
           <h1 className="text-4xl md:text-6xl font-bold text-gray-900 mb-4 animate-fade-in">
-            Olá, eu sou <span className="text-blue-600">Seu Nome</span>
+            Olá, eu sou <span className="text-blue-600 inline-block min-w-[200px] md:min-w-[300px]">{text}</span>
+            <span className="animate-pulse">|</span>
           </h1>
           <p className="text-xl md:text-2xl text-gray-600 mb-8 animate-fade-in-up" style={{ animationDelay: '0.2s' }}>
             Desenvolvedor Web & Designer de Interfaces
