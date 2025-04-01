@@ -1,6 +1,14 @@
 import React from 'react';
 
 const AboutSection = () => {
+  const handleNavClick = (e: React.MouseEvent<HTMLAnchorElement>, id: string) => {
+    e.preventDefault();
+    const element = document.querySelector(id);
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
   return (
     <section id="sobre" className="py-16 md:py-24 bg-white dark:bg-gray-900">
       <div className="container mx-auto px-4 md:px-6">
@@ -33,10 +41,10 @@ const AboutSection = () => {
               Estou determinado a ser o melhor no que faço, sempre buscando excelência e aprendizado contínuo. Minha missão é entregar resultados que não apenas atendam, mas superem as expectativas de cada projeto.
             </p>
             <div className="flex flex-col md:flex-row gap-4">
-              <a href="#projetos" className="px-6 py-3 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors text-center">
+              <a href="#projetos" onClick={(e) => handleNavClick(e, '#projetos')} className="px-6 py-3 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors text-center">
                 Ver Projetos
               </a>
-              <a href="#contato" className="px-6 py-3 border border-blue-600 text-blue-600 rounded-lg hover:bg-blue-50 transition-colors text-center">
+              <a href="#contato" onClick={(e) => handleNavClick(e, '#contato')} className="px-6 py-3 border border-blue-600 text-blue-600 rounded-lg hover:bg-blue-50 transition-colors text-center">
                 Entre em Contato
               </a>
             </div>

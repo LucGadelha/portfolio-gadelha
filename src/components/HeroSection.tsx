@@ -6,9 +6,17 @@ const HeroSection = () => {
   const [text, setText] = useState('');
   const [isDeleting, setIsDeleting] = useState(false);
   const [loopNum, setLoopNum] = useState(0);
-  const [typingSpeed, setTypingSpeed] = useState(100); // Aumentei a velocidade alterando de 150 para 100
+  const [typingSpeed, setTypingSpeed] = useState(100);
 
   const roles = ['Lucas Gadelha', 'Engenheiro de Software', 'Desenvolvedor', 'Programador'];
+
+  const handleNavClick = (e: React.MouseEvent<HTMLAnchorElement>, id: string) => {
+    e.preventDefault();
+    const element = document.querySelector(id);
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
   
   useEffect(() => {
     const handleTyping = () => {
@@ -80,6 +88,7 @@ const HeroSection = () => {
           </div>
           <a 
             href="#sobre" 
+            onClick={(e) => handleNavClick(e, '#sobre')}
             className="inline-flex items-center gap-2 text-blue-600 dark:text-blue-400 hover:text-blue-800 dark:hover:text-blue-300 transition-colors animate-fade-in-up"
             style={{ animationDelay: '0.6s' }}
           >

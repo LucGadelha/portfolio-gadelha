@@ -61,52 +61,52 @@ const ProjectCard = ({ title, description, image, tags, github, liveDemo }: Proj
 const ProjectsSection = () => {
   const projects = [
     {
-      title: "E-commerce Responsivo",
-      description: "Uma loja online completa com sistema de carrinho, pagamentos e painel administrativo.",
+      title: "Sales Dashboard",
+      description: "Dashboard administrativo para visualização e gerenciamento de vendas, com gráficos interativos e análise de dados em tempo real.",
       image: "",
-      tags: ["React", "Node.js", "MongoDB"],
+      tags: ["React", "TypeScript", "Tailwind CSS", "Recharts"],
       github: "https://github.com/LucGadelha/sales-dashboard-lg",
-      liveDemo: "https://example.com",
+      liveDemo: "https://sales-dashboard-lg.vercel.app"
     },
     {
-      title: "App de Previsão do Tempo",
-      description: "Aplicativo que mostra previsões do tempo para qualquer cidade do mundo.",
+      title: "Weather Forecast",
+      description: "Aplicativo de previsão do tempo que fornece informações meteorológicas detalhadas para qualquer cidade do mundo.",
       image: "",
-      tags: ["React", "Bootstrap", "TypeScript"],
+      tags: ["React", "TypeScript", "Bootstrap", "OpenWeather API"],
       github: "https://github.com/LucGadelha/Weather-Forecast",
-      liveDemo: "https://dnc-weather-l.netlify.app",
+      liveDemo: "https://dnc-weather-l.netlify.app"
     },
     {
-      title: "Blog de Tecnologia",
-      description: "Plataforma de conteúdo com sistema de comentários e perfis de usuário.",
+      title: "Instasany Landing Page",
+      description: "Landing page moderna e responsiva para apresentação de empresa, com design clean e animações suaves.",
       image: "",
-      tags: ["Next.js", "Tailwind CSS", "Prisma"],
-      github: "https://github.com",
-      liveDemo: "https://example.com",
-    },
-    {
-      title: "Dashboard Analítico",
-      description: "Painel administrativo com visualização de dados em tempo real.",
-      image: "",
-      tags: ["Angular", "Express", "D3.js"],
-      github: "https://github.com",
-      liveDemo: "https://example.com",
-    },
-    {
-      title: "App de Clima",
-      description: "Aplicativo que mostra previsões do tempo para qualquer cidade do mundo.",
-      image: "",
-      tags: ["React Native", "API RESTful"],
-      github: "https://github.com",
-      liveDemo: "https://example.com",
-    },
-    {
-      title: "Landingpage Intasany",
-      description: "Landingpage de apresentação de empresa.",
-      image: "",
-      tags: ["TypeScript", "HTML", "CSS"],
+      tags: ["Next.js", "TypeScript", "Tailwind CSS"],
       github: "https://github.com/LucGadelha/Instasany-LP",
-      liveDemo: "https://instasany-lp.vercel.app",
+      liveDemo: "https://instasany-lp.vercel.app"
+    },
+    {
+      title: "Calculadora IMC",
+      description: "Aplicativo web para cálculo do Índice de Massa Corporal (IMC) com interface intuitiva e resultados detalhados.",
+      image: "",
+      tags: ["React", "JavaScript", "CSS"],
+      github: "https://github.com/LucGadelha/IMC",
+      liveDemo: "https://imc-lg.vercel.app"
+    },
+    {
+      title: "Lista de Tarefas",
+      description: "Aplicativo de gerenciamento de tarefas com funcionalidades de adicionar, editar, marcar como concluído e excluir tarefas.",
+      image: "",
+      tags: ["React", "TypeScript", "CSS"],
+      github: "https://github.com/LucGadelha/Lista-de-Tarefas",
+      liveDemo: "https://lista-de-tarefas-lg.vercel.app"
+    },
+    {
+      title: "Portfolio Pool Landing",
+      description: "Portfólio profissional moderno com tema escuro/claro, animações suaves e design responsivo, desenvolvido com as mais recentes tecnologias web.",
+      image: "",
+      tags: ["React", "TypeScript", "Tailwind CSS", "Vite"],
+      github: "https://github.com/LucGadelha/portfolio-pool-landing",
+      liveDemo: "https://portfolio-pool-landing.vercel.app"
     }
   ];
 

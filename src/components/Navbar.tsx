@@ -19,6 +19,15 @@ const Navbar = () => {
 
   const toggleMenu = () => setIsOpen(!isOpen);
 
+  const handleNavClick = (e: React.MouseEvent<HTMLAnchorElement>, id: string) => {
+    e.preventDefault();
+    const element = document.querySelector(id);
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth' });
+      if (isOpen) toggleMenu();
+    }
+  };
+
   return (
     <nav className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${scrolled ? 'bg-white dark:bg-gray-900 shadow-md py-2' : 'bg-transparent py-4'}`}>
       <div className="container mx-auto px-4 md:px-6">
@@ -42,10 +51,10 @@ const Navbar = () => {
 
             {/* Desktop menu */}
             <div className="hidden md:flex space-x-8">
-              <a href="#sobre" className="text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors">Sobre</a>
-              <a href="#habilidades" className="text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors">Habilidades</a>
-              <a href="#projetos" className="text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors">Projetos</a>
-              <a href="#contato" className="text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors">Contato</a>
+              <a href="#sobre" onClick={(e) => handleNavClick(e, '#sobre')} className="text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors">Sobre</a>
+              <a href="#habilidades" onClick={(e) => handleNavClick(e, '#habilidades')} className="text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors">Habilidades</a>
+              <a href="#projetos" onClick={(e) => handleNavClick(e, '#projetos')} className="text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors">Projetos</a>
+              <a href="#contato" onClick={(e) => handleNavClick(e, '#contato')} className="text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors">Contato</a>
             </div>
           </div>
         
@@ -53,10 +62,10 @@ const Navbar = () => {
         {isOpen && (
           <div className="md:hidden mt-4 pb-4 animate-fade-in">
             <div className="flex flex-col space-y-4">
-              <a href="#sobre" onClick={toggleMenu} className="text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors">Sobre</a>
-              <a href="#habilidades" onClick={toggleMenu} className="text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors">Habilidades</a>
-              <a href="#projetos" onClick={toggleMenu} className="text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors">Projetos</a>
-              <a href="#contato" onClick={toggleMenu} className="text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors">Contato</a>
+              <a href="#sobre" onClick={(e) => handleNavClick(e, '#sobre')} className="text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors">Sobre</a>
+              <a href="#habilidades" onClick={(e) => handleNavClick(e, '#habilidades')} className="text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors">Habilidades</a>
+              <a href="#projetos" onClick={(e) => handleNavClick(e, '#projetos')} className="text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors">Projetos</a>
+              <a href="#contato" onClick={(e) => handleNavClick(e, '#contato')} className="text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors">Contato</a>
             </div>
           </div>
         )}
