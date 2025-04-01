@@ -1,5 +1,5 @@
 # Portfólio Lucas Gadelha
---
+------------------------------------------------------------
 
 ## 🚀 Inicializando o projeto:
 
