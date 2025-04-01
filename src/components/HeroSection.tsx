@@ -53,24 +53,27 @@ const HeroSection = () => {
           </p>
           <div className="flex justify-center space-x-4 mb-12 animate-fade-in-up" style={{ animationDelay: '0.4s' }}>
             <a 
-              href="https://github.com" 
+              href="https://github.com/LucGadelha" 
               target="_blank" 
               rel="noopener noreferrer"
               className="bg-gray-800 text-white p-2 rounded-full hover:bg-gray-700 transition-colors"
+              aria-label="GitHub"
             >
               <Github size={20} />
             </a>
             <a 
-              href="https://linkedin.com" 
+              href="https://linkedin.com/in/lucas-gadelha/" 
               target="_blank" 
               rel="noopener noreferrer"
               className="bg-blue-600 text-white p-2 rounded-full hover:bg-blue-700 transition-colors"
+              aria-label="LinkedIn"
             >
               <Linkedin size={20} />
             </a>
             <a 
-              href="mailto:email@exemplo.com" 
+              href="mailto:gadelhadev0@gmail.com" 
               className="bg-red-500 text-white p-2 rounded-full hover:bg-red-600 transition-colors"
+              aria-label="Email"
             >
               <Mail size={20} />
             </a>

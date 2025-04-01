@@ -22,28 +22,28 @@ const SkillsSection = () => {
   const skills = [
     {
       icon: <Code size={24} />,
-      title: "Desenvolvimento Front-end",
-      description: "HTML, CSS, JavaScript, React.js, Vue.js, e outras tecnologias modernas para criar interfaces interativas."
+      title: "Desenvolvimento Front e Back End",
+      description: "Experiência com JavaScript, React, TypeScript, Node.js, Express, Python, Next.js e diversas outras tecnologias para criar aplicações completas."
     },
     {
       icon: <Layout size={24} />,
-      title: "UI/UX Design",
-      description: "Criação de interfaces intuitivas e atraentes focadas na experiência do usuário."
+      title: "Design Responsivo",
+      description: "Criação de layouts adaptáveis que funcionam perfeitamente em todos os dispositivos e tamanhos de tela."
     },
     {
       icon: <Database size={24} />,
-      title: "Desenvolvimento Back-end",
-      description: "Node.js, Express, SQL, MongoDB e outros para criar APIs e serviços robustos."
+      title: "CI/CD",
+      description: "Implementação de pipeline de integração e entrega contínua para automação de processos de desenvolvimento."
     },
     {
       icon: <PenTool size={24} />,
-      title: "Design Responsivo",
-      description: "Layouts adaptáveis que funcionam perfeitamente em todos os dispositivos e tamanhos de tela."
+      title: "Sistemas de Controle",
+      description: "Desenvolvimento de sistemas robustos para gerenciamento e controle de processos e operações."
     },
     {
       icon: <Sparkles size={24} />,
-      title: "Animações e Interações",
-      description: "Criação de animações fluidas e interações que enriquecem a experiência do usuário."
+      title: "Sistemas de Análise de Dados",
+      description: "Criação de soluções para coleta, processamento e visualização de dados para tomada de decisões."
     },
     {
       icon: <LineChart size={24} />,
