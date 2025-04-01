@@ -1,4 +1,3 @@
-
 import React from 'react';
 
 const AboutSection = () => {
@@ -23,13 +22,13 @@ const AboutSection = () => {
               <div className="h-1 w-20 bg-blue-600 mt-2"></div>
             </h2>
             <p className="text-gray-600 mb-4">
-              Olá! Sou desenvolvedor Full Stack com 3 anos de experiência construindo aplicações do zero, tanto no front-end quanto no back-end. Minha jornada começou com projetos diversos, desde landing pages para lojas e restaurantes até APIs robustas para e-commerce e bibliotecas.
+              Olá! Sou desenvolvedor Full Stack com 3 anos de experiência construindo aplicações do zero, tanto no front-end quanto no back-end. Minha jornada começou com projetos diversos, desde landing pages para lojas e restaurantes até APIs robustas para e-commerce e bibliotecas. Trabalhei com tecnologias como JavaScript, React, TypeScript, Node.js, Express, Python, Next.js, Tailwind CSS e testes com Nest.
             </p>
             <p className="text-gray-600 mb-4">
-              Trabalhei com tecnologias como JavaScript, React, TypeScript, Node.js, Express, Python, Next.js, Tailwind CSS e testes com Nest.
+              Transformo desafios em soluções inovadoras, combinando criatividade técnica com uma paixão ardente por desenvolvimento de software. Meu compromisso vai além do código: busco constantemente superar expectativas e criar experiências digitais excepcionais.
             </p>
             <p className="text-gray-600 mb-6">
-              Recentemente, me formei em Engenharia de Software e estou em busca de novas oportunidades para crescer profissionalmente. Meu grande objetivo é atuar como desenvolvedor na Europa, trazendo soluções inovadoras e colaborando com times incríveis. Se você busca um profissional comprometido e apaixonado por tecnologia, pode me chamar!
+              Estou determinado a ser o melhor no que faço, sempre buscando excelência e aprendizado contínuo. Minha missão é entregar resultados que não apenas atendam, mas superem as expectativas de cada projeto.
             </p>
             <div className="flex flex-col md:flex-row gap-4">
               <a href="#projetos" className="px-6 py-3 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors text-center">
