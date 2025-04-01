@@ -63,7 +63,7 @@ const ProjectsSection = () => {
     {
       title: "Sales Dashboard",
       description: "Dashboard administrativo para visualização e gerenciamento de vendas, com gráficos interativos e análise de dados em tempo real.",
-      image: "",
+      image: "/images/projects/dashboard.png",
       tags: ["React", "TypeScript", "Tailwind CSS", "Recharts"],
       github: "https://github.com/LucGadelha/sales-dashboard-lg",
       liveDemo: "https://sales-dashboard-lg.vercel.app"
@@ -71,7 +71,7 @@ const ProjectsSection = () => {
     {
       title: "Weather Forecast",
       description: "Aplicativo de previsão do tempo que fornece informações meteorológicas detalhadas para qualquer cidade do mundo.",
-      image: "",
+      image: "/images/projects/Weather.png",
       tags: ["React", "TypeScript", "Bootstrap", "OpenWeather API"],
       github: "https://github.com/LucGadelha/Weather-Forecast",
       liveDemo: "https://dnc-weather-l.netlify.app"
@@ -79,7 +79,7 @@ const ProjectsSection = () => {
     {
       title: "Instasany Landing Page",
       description: "Landing page moderna e responsiva para apresentação de empresa, com design clean e animações suaves.",
-      image: "",
+      image: "/images/projects/Instasany.png",
       tags: ["Next.js", "TypeScript", "Tailwind CSS"],
       github: "https://github.com/LucGadelha/Instasany-LP",
       liveDemo: "https://instasany-lp.vercel.app"
@@ -87,26 +87,26 @@ const ProjectsSection = () => {
     {
       title: "Calculadora IMC",
       description: "Aplicativo web para cálculo do Índice de Massa Corporal (IMC) com interface intuitiva e resultados detalhados.",
-      image: "",
+      image: "/images/projects/imc.png",
       tags: ["React", "JavaScript", "CSS"],
       github: "https://github.com/LucGadelha/IMC",
-      liveDemo: "https://imc-lg.vercel.app"
+      liveDemo: ""
     },
     {
       title: "Lista de Tarefas",
       description: "Aplicativo de gerenciamento de tarefas com funcionalidades de adicionar, editar, marcar como concluído e excluir tarefas.",
-      image: "",
+      image: "/images/projects/Todo.png",
       tags: ["React", "TypeScript", "CSS"],
       github: "https://github.com/LucGadelha/Lista-de-Tarefas",
-      liveDemo: "https://lista-de-tarefas-lg.vercel.app"
+      liveDemo: ""
     },
     {
       title: "Portfolio Pool Landing",
       description: "Portfólio profissional moderno com tema escuro/claro, animações suaves e design responsivo, desenvolvido com as mais recentes tecnologias web.",
-      image: "",
+      image: "/images/projects/Portfolio.png",
       tags: ["React", "TypeScript", "Tailwind CSS", "Vite"],
       github: "https://github.com/LucGadelha/portfolio-pool-landing",
-      liveDemo: "https://portfolio-pool-landing.vercel.app"
+      liveDemo: "https://portfolio-lucas-gadelha.vercel.app"
     }
   ];
 
