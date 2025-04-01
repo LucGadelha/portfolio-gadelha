@@ -9,12 +9,12 @@ interface SkillCardProps {
 }
 
 const SkillCard = ({ icon, title, description }: SkillCardProps) => (
-  <div className="bg-white p-6 rounded-lg shadow-md border border-gray-100 hover:shadow-lg transition-shadow">
-    <div className="bg-blue-100 text-blue-600 w-12 h-12 rounded-lg flex items-center justify-center mb-4">
+  <div className="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-md border border-gray-100 dark:border-gray-700 hover:shadow-lg transition-shadow">
+    <div className="bg-blue-100 dark:bg-blue-900 text-blue-600 dark:text-blue-300 w-12 h-12 rounded-lg flex items-center justify-center mb-4">
       {icon}
     </div>
-    <h3 className="text-xl font-semibold mb-2">{title}</h3>
-    <p className="text-gray-600">{description}</p>
+    <h3 className="text-xl font-semibold mb-2 dark:text-white">{title}</h3>
+    <p className="text-gray-600 dark:text-gray-300">{description}</p>
   </div>
 );
 
@@ -53,13 +53,13 @@ const SkillsSection = () => {
   ];
 
   return (
-    <section id="habilidades" className="py-16 md:py-24 bg-gray-50">
+    <section id="habilidades" className="py-16 md:py-24 bg-gray-50 dark:bg-gray-900">
       <div className="container mx-auto px-4 md:px-6">
         <div className="text-center max-w-3xl mx-auto mb-12">
-          <h2 className="text-3xl md:text-4xl font-bold mb-4">
-            Minhas <span className="text-blue-600">Habilidades</span>
+          <h2 className="text-3xl md:text-4xl font-bold mb-4 dark:text-white">
+            Minhas <span className="text-blue-600 dark:text-blue-400">Habilidades</span>
           </h2>
-          <p className="text-gray-600">
+          <p className="text-gray-600 dark:text-gray-300">
             Aqui estão algumas das habilidades e tecnologias que utilizo para criar projetos incríveis.
           </p>
         </div>

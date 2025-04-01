@@ -4,44 +4,44 @@ import { Mail, Phone, MapPin, Send } from 'lucide-react';
 
 const ContactSection = () => {
   return (
-    <section id="contato" className="py-16 md:py-24 bg-gray-50">
+    <section id="contato" className="py-16 md:py-24 bg-gray-50 dark:bg-gray-900">
       <div className="container mx-auto px-4 md:px-6">
         <div className="text-center max-w-3xl mx-auto mb-12">
-          <h2 className="text-3xl md:text-4xl font-bold mb-4">
-            Entre em <span className="text-blue-600">Contato</span>
+          <h2 className="text-3xl md:text-4xl font-bold mb-4 dark:text-white">
+            Entre em <span className="text-blue-600 dark:text-blue-400">Contato</span>
           </h2>
-          <p className="text-gray-600">
+          <p className="text-gray-600 dark:text-gray-300">
             Tem um projeto em mente? Entre em contato comigo para conversarmos.
           </p>
         </div>
         
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
-          <div className="bg-white p-8 rounded-lg shadow-md">
+          <div className="bg-white dark:bg-gray-800 p-8 rounded-lg shadow-md">
             <form>
               <div className="mb-6">
-                <label htmlFor="name" className="block text-gray-700 mb-2">Nome</label>
+                <label htmlFor="name" className="block text-gray-700 dark:text-gray-300 mb-2">Nome</label>
                 <input 
                   type="text" 
                   id="name" 
-                  className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+                  className="w-full px-4 py-2 border border-gray-300 dark:border-gray-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent dark:bg-gray-700 dark:text-white"
                   placeholder="Seu nome"
                 />
               </div>
               <div className="mb-6">
-                <label htmlFor="email" className="block text-gray-700 mb-2">Email</label>
+                <label htmlFor="email" className="block text-gray-700 dark:text-gray-300 mb-2">Email</label>
                 <input 
                   type="email" 
                   id="email" 
-                  className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+                  className="w-full px-4 py-2 border border-gray-300 dark:border-gray-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent dark:bg-gray-700 dark:text-white"
                   placeholder="seu@email.com"
                 />
               </div>
               <div className="mb-6">
-                <label htmlFor="message" className="block text-gray-700 mb-2">Mensagem</label>
+                <label htmlFor="message" className="block text-gray-700 dark:text-gray-300 mb-2">Mensagem</label>
                 <textarea 
                   id="message" 
                   rows={5}
-                  className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+                  className="w-full px-4 py-2 border border-gray-300 dark:border-gray-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent dark:bg-gray-700 dark:text-white"
                   placeholder="Como posso ajudar?"
                 ></textarea>
               </div>
@@ -63,7 +63,7 @@ const ContactSection = () => {
                 </div>
                 <div>
                   <h3 className="text-lg font-semibold mb-1">Email</h3>
-                  <p className="text-gray-600">gadelhadev0@gmail.com</p>
+                  <p className="text-gray-600 dark:text-gray-300">gadelhadev0@gmail.com</p>
                 </div>
               </div>
               
@@ -73,7 +73,12 @@ const ContactSection = () => {
                 </div>
                 <div>
                   <h3 className="text-lg font-semibold mb-1">Telefone</h3>
-                  <p className="text-gray-600">(92) 98163-4154</p>
+                  <a
+                    href="https://wa.me/92981634154" 
+                    target="_blank"
+                    rel="noopener noreferrer">
+                    <p className="text-gray-600 dark:text-gray-300">(92) 98163-4154</p>
+                  </a>
                 </div>
               </div>
               
@@ -83,7 +88,7 @@ const ContactSection = () => {
                 </div>
                 <div>
                   <h3 className="text-lg font-semibold mb-1">Localização</h3>
-                  <p className="text-gray-600">Manaus - AM, Brasil</p>
+                  <p className="text-gray-600 dark:text-gray-300">Manaus - AM, Brasil</p>
                 </div>
               </div>
               

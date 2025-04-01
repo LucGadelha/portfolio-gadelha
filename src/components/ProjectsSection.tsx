@@ -12,17 +12,17 @@ interface ProjectCardProps {
 }
 
 const ProjectCard = ({ title, description, image, tags, github, liveDemo }: ProjectCardProps) => (
-  <div className="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-lg transition-shadow border border-gray-100">
-    <div className="h-48 bg-gray-200 flex items-center justify-center">
+  <div className="bg-white dark:bg-gray-800 rounded-lg overflow-hidden shadow-md hover:shadow-lg transition-shadow border border-gray-100 dark:border-gray-700">
+    <div className="h-48 bg-gray-200 dark:bg-gray-700 flex items-center justify-center">
       {image ? (
         <img src={image} alt={title} className="w-full h-full object-cover" />
       ) : (
-        <span className="text-gray-400">Imagem do Projeto</span>
+        <span className="text-gray-400 dark:text-gray-500">Imagem do Projeto</span>
       )}
     </div>
     <div className="p-6">
-      <h3 className="text-xl font-semibold mb-2">{title}</h3>
-      <p className="text-gray-600 mb-4">{description}</p>
+      <h3 className="text-xl font-semibold mb-2 dark:text-white">{title}</h3>
+      <p className="text-gray-600 dark:text-gray-300 mb-4">{description}</p>
       <div className="flex flex-wrap gap-2 mb-4">
         {tags.map((tag, index) => (
           <span key={index} className="px-3 py-1 bg-blue-100 text-blue-600 text-sm rounded-full">
@@ -36,7 +36,7 @@ const ProjectCard = ({ title, description, image, tags, github, liveDemo }: Proj
             href={github} 
             target="_blank" 
             rel="noopener noreferrer" 
-            className="flex items-center gap-1 text-gray-700 hover:text-blue-600 transition-colors"
+            className="flex items-center gap-1 text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors"
           >
             <Github size={18} />
             <span>Código</span>
@@ -47,7 +47,7 @@ const ProjectCard = ({ title, description, image, tags, github, liveDemo }: Proj
             href={liveDemo} 
             target="_blank" 
             rel="noopener noreferrer" 
-            className="flex items-center gap-1 text-gray-700 hover:text-blue-600 transition-colors"
+            className="flex items-center gap-1 text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors"
           >
             <ExternalLink size={18} />
             <span>Demo</span>
@@ -65,16 +65,16 @@ const ProjectsSection = () => {
       description: "Uma loja online completa com sistema de carrinho, pagamentos e painel administrativo.",
       image: "",
       tags: ["React", "Node.js", "MongoDB"],
-      github: "https://github.com",
+      github: "https://github.com/LucGadelha/sales-dashboard-lg",
       liveDemo: "https://example.com",
     },
     {
-      title: "App de Gestão Financeira",
-      description: "Aplicativo para controle de gastos pessoais com gráficos e relatórios detalhados.",
+      title: "App de Previsão do Tempo",
+      description: "Aplicativo que mostra previsões do tempo para qualquer cidade do mundo.",
       image: "",
-      tags: ["Vue.js", "Firebase", "Chart.js"],
-      github: "https://github.com",
-      liveDemo: "https://example.com",
+      tags: ["React", "Bootstrap", "TypeScript"],
+      github: "https://github.com/LucGadelha/Weather-Forecast",
+      liveDemo: "https://dnc-weather-l.netlify.app",
     },
     {
       title: "Blog de Tecnologia",
@@ -101,23 +101,23 @@ const ProjectsSection = () => {
       liveDemo: "https://example.com",
     },
     {
-      title: "Sistema de Reservas",
-      description: "Solução para agendamento e gerenciamento de reservas online.",
+      title: "Landingpage Intasany",
+      description: "Landingpage de apresentação de empresa.",
       image: "",
-      tags: ["PHP", "MySQL", "jQuery"],
-      github: "https://github.com",
-      liveDemo: "https://example.com",
+      tags: ["TypeScript", "HTML", "CSS"],
+      github: "https://github.com/LucGadelha/Instasany-LP",
+      liveDemo: "https://instasany-lp.vercel.app",
     }
   ];
 
   return (
-    <section id="projetos" className="py-16 md:py-24 bg-white">
+    <section id="projetos" className="py-16 md:py-24 bg-white dark:bg-gray-900">
       <div className="container mx-auto px-4 md:px-6">
         <div className="text-center max-w-3xl mx-auto mb-12">
           <h2 className="text-3xl md:text-4xl font-bold mb-4">
             Meus <span className="text-blue-600">Projetos</span>
           </h2>
-          <p className="text-gray-600">
+          <p className="text-gray-600 dark:text-gray-300">
             Uma seleção dos meus trabalhos recentes e projetos pessoais.
           </p>
         </div>
@@ -136,7 +136,7 @@ const ProjectsSection = () => {
         </div>
         <div className="text-center mt-12">
           <a 
-            href="https://github.com" 
+            href="https://github.com/LucGadelha/" 
             target="_blank" 
             rel="noopener noreferrer"
             className="inline-flex items-center gap-2 px-6 py-3 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors"
