@@ -8,7 +8,7 @@
 Para começar, clone o projeto executando o seguinte comando:
 
 ```bash
-git clone https://github.com/LucGadelha/portfolio-pool-landing.git
+git clone https://github.com/LucGadelha/portfolio-gadelha.git
 ```
 
 
@@ -17,7 +17,7 @@ git clone https://github.com/LucGadelha/portfolio-pool-landing.git
 ### 1. Acesse o diretório do projeto:
 
 ```bash
-cd portfolio-pool-landing
+cd portfolio-gadelha
 ```
 
 
