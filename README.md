@@ -43,3 +43,8 @@ bun dev
 ```
 
 ---
+
+## Contato Lucas Gadelha da Costa
+- [Email](gadelhadev0@gmail.com)
+- [Whatsapp](9298163-4154)
+- [LinkedIn](LinkedIn.com/in/lucas-gadelha/)
