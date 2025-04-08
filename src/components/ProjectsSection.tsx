@@ -61,7 +61,7 @@ const ProjectCard = ({ title, description, image, tags, github, liveDemo }: Proj
 const ProjectsSection = () => {
   const projects = [
     {
-      title: "Sales Dashboard",
+      title: "Dashboard de Vendas",
       description: "Dashboard administrativo para visualização e gerenciamento de vendas, com gráficos interativos e análise de dados em tempo real.",
       image: "/images/projects/dashboard.png",
       tags: ["React", "TypeScript", "Tailwind CSS", "Recharts"],
@@ -69,7 +69,7 @@ const ProjectsSection = () => {
       liveDemo: "https://sales-dashboard-lg.vercel.app"
     },
     {
-      title: "Weather Forecast",
+      title: "Informações Meteorológicas",
       description: "Aplicativo de previsão do tempo que fornece informações meteorológicas detalhadas para qualquer cidade do mundo.",
       image: "/images/projects/Weather.png",
       tags: ["React", "TypeScript", "Bootstrap", "OpenWeather API"],
@@ -77,7 +77,7 @@ const ProjectsSection = () => {
       liveDemo: "https://dnc-weather-l.netlify.app"
     },
     {
-      title: "Instasany Landing Page",
+      title: "Instasany's Landing Page",
       description: "Landing page moderna e responsiva para apresentação de empresa, com design clean e animações suaves.",
       image: "/images/projects/Instasany.png",
       tags: ["Next.js", "TypeScript", "Tailwind CSS"],
@@ -85,12 +85,12 @@ const ProjectsSection = () => {
       liveDemo: "https://instasany-lp.vercel.app"
     },
     {
-      title: "Calculadora IMC",
+      title: "Controle de Usuários",
       description: "Aplicativo web para cálculo do Índice de Massa Corporal (IMC) com interface intuitiva e resultados detalhados.",
-      image: "/images/projects/imc.png",
+      image: "/images/projects/imagem_2025-04-07_222309142.png",
       tags: ["React", "JavaScript", "CSS"],
-      github: "https://github.com/LucGadelha/IMC",
-      liveDemo: ""
+      github: "https://github.com/LucGadelha/user-management",
+      liveDemo: "https://user-management-one-dun.vercel.app"
     },
     {
       title: "Lista de Tarefas",
