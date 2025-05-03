@@ -69,12 +69,12 @@ const ProjectsSection = () => {
       liveDemo: "https://sales-dashboard-lg.vercel.app"
     },
     {
-      title: "Informações Meteorológicas",
-      description: "Aplicativo de previsão do tempo que fornece informações meteorológicas detalhadas para qualquer cidade do mundo.",
-      image: "/images/projects/Weather.png",
-      tags: ["React", "TypeScript", "Bootstrap", "OpenWeather API"],
-      github: "https://github.com/LucGadelha/Weather-Forecast",
-      liveDemo: "https://dnc-weather-l.netlify.app"
+      title: "Sistema de Vistoria",
+      description: "Aplicativo para gerenciamento de vistorias com interface intuitiva e resultados detalhados.",
+      image: "/images/projects/Vistoria.png",
+      tags: ["React", "TypeScript", "Tailwind CSS", "Nest"],
+      github: "https://github.com/LucGadelha/sistema-vistoria-proxion",
+      liveDemo: "https://sistema-vistoria-proxion-nt.vercel.app"
     },
     {
       title: "Instasany's Landing Page",
@@ -98,7 +98,7 @@ const ProjectsSection = () => {
       image: "/images/projects/Todo.png",
       tags: ["React", "TypeScript", "CSS"],
       github: "https://github.com/LucGadelha/Lista-de-Tarefas",
-      liveDemo: ""
+      liveDemo: "https://github.com/LucGadelha/todo-gipyo"
     },
     {
       title: "Portfolio Pool Landing",
